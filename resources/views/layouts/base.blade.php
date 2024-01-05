@@ -115,7 +115,7 @@
                         <div class="main-menu">
                             <div class="menu-left">
                                 <div class="brand-logo">
-                                    <a href="index.htm">
+                                    <a href="{{route('app.index')}}">
                                         <img src="assets/images/logo.png" class="h-logo img-fluid blur-up lazyload"
                                             alt="logo" height="30" width="60">
                                     </a>
@@ -283,9 +283,9 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-contact">
                             <div class="brand-logo">
-                                <a href="index.htm" class="footer-logo float-start">
+                                <a href="{{route('app.index')}}" class="footer-logo float-start">
                                     <img src="{{('assets/images/logo.png')}}" class="f-logo img-fluid blur-up lazyload"
-                                        alt="logo">
+                                        alt="logo" width="60" height="30">
                                 </a>
                             </div>
                             <ul class="contact-lists" style="clear:both;">
