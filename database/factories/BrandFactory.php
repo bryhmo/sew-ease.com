@@ -18,10 +18,10 @@ class BrandFactory extends Factory
 
     public function definition(): array
      {
-        $category_name = $this->faker->unique()->words($no=2,$asText=true);
-        $slug = Str::slug($category_name);
+        $brand_name = $this->faker->unique()->words($no=2,$asText=true);
+        $slug = Str::slug($brand_name);
         return [
-            'name' => Str::title($category_name),
+            'name' => Str::title($brand_name),
             'slug' => $slug,
             'image' => $this->faker->numberBetween(1,6).'.jpg'
         ];
