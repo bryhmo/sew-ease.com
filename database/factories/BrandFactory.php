@@ -18,7 +18,7 @@ class BrandFactory extends Factory
 
     public function definition(): array
      {
-        $brand_name = $this->faker->unique()->words($no=2,$asText=true);
+        $brand_name = $this->faker->unique()->words($nb=2,$asText=true);
         $slug = Str::slug($brand_name);
         return [
             'name' => Str::title($brand_name),
