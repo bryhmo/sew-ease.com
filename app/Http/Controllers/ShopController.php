@@ -9,7 +9,7 @@ class ShopController extends Controller
 {
     //this is the shop controller for the shop in the mav bar
     public function index(){
-        $products = Product::ORDERBY('created_at','DESC')->paginate(12);
+        $products = Product::orderBy('created_at','DESC')->paginate(12);
         return view('shop',['products'=>$products]);
     }
 }
