@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Gloudemans\Shoppingcart\Facades\Cart;
 
 class ShopController extends Controller
 {
@@ -18,5 +19,7 @@ class ShopController extends Controller
         $rproducts = Product::where('slug','!=', $slug)->inRandomOrder('id')->get()->take(8);
         return view('details',['product'=>$product,'rproducts'=>$rproducts]);
     }
+
+   
 }
  
